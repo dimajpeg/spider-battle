@@ -73,92 +73,102 @@
   <section class="results">
     <h2>Оцініть кожного Людину-Павука за критеріями:</h2>
     <table>
-      <tr>
-        <th>Критерії</th>
-        <th>Тобі Магуайр</th>
-        <th>Ендрю Гарфілд</th>
-        <th>Том Голланд</th>
-      </tr>
-      <tr>
-        <td>Гра</td>
-        <td><input type="checkbox" name="box1"></td>
-        <td><input type="checkbox" name="box2"></td>
-        <td><input type="checkbox" name="box3"></td>
-      </tr>
-      <tr>
-        <td>Вигляд</td>
-        <td><input type="checkbox" name="box4"></td>
-        <td><input type="checkbox" name="box5"></td>
-        <td><input type="checkbox" name="box6"></td>
-      </tr>
-      <tr>
-        <td>Юмор</td>
-        <td><input type="checkbox" name="box7"></td>
-        <td><input type="checkbox" name="box8"></td>
-        <td><input type="checkbox" name="box9"></td>
-      </tr>
-      <tr>
-        <td>Касовий успіх</td>
-        <td><input type="checkbox" name="box10"></td>
-        <td><input type="checkbox" name="box11"></td>
-        <td><input type="checkbox" name="box12"></td>
-      </tr>
-      <tr>
-        <td>Вік</td>
-        <td><input type="checkbox" name="box13"></td>
-        <td><input type="checkbox" name="box14"></td>
-        <td><input type="checkbox" name="box15"></td>
-      </tr>
-      <tr>
-        <td>Костюм</td>
-        <td><input type="checkbox" name="box16"></td>
-        <td><input type="checkbox" name="box17"></td>
-        <td><input type="checkbox" name="box18"></td>
-      </tr>
-      <tr>
-        <td>Любовна лінія</td>
-        <td><input type="checkbox" name="box19"></td>
-        <td><input type="checkbox" name="box20"></td>
-        <td><input type="checkbox" name="box21"></td>
-      </tr>
-      <tr>
-        <td>Злодії</td>
-        <td><input type="checkbox" name="box22"></td>
-        <td><input type="checkbox" name="box23"></td>
-        <td><input type="checkbox" name="box24"></td>
-      </tr>
-      <tr>
-        <td>Екшн</td>
-        <td><input type="checkbox" name="box25"></td>
-        <td><input type="checkbox" name="box26"></td>
-        <td><input type="checkbox" name="box27"></td>
-      </tr>
-      <tr>
-        <td>Самостійність</td>
-        <td><input type="checkbox" name="box28"></td>
-        <td><input type="checkbox" name="box29"></td>
-        <td><input type="checkbox" name="box30"></td>
-      </tr>
-      <tr>
-        <td>Канонічність до коміксів</td>
-        <td><input type="checkbox" name="box31"></td>
-        <td><input type="checkbox" name="box32"></td>
-        <td><input type="checkbox" name="box33"></td>
-      </tr>
-      <tr>
-        <td>Акторська гра</td>
-        <td><input type="checkbox" name="box34"></td>
-        <td><input type="checkbox" name="box35"></td>
-        <td><input type="checkbox" name="box36"></td>
-      </tr>
-      <tr>
-        <td>Загальний бал</td>
-        <td><input type="text" name="box37"></td>
-        <td><input type="text" name="box38"></td>
-        <td><input type="text" name="box39"></td>
-      </tr>
+      <thead>
+        <tr>
+          <th>Критерії</th>
+          <th>Тобі Магуайр</th>
+          <th>Ендрю Гарфілд</th>
+          <th>Том Голланд</th>
+        </tr>
+      </thead>
+
+      <tbody onchange="handleCheck()">
+        <tr>
+          <td>Гра</td>
+          <td><input type="checkbox" name="box1"></td>
+          <td><input type="checkbox" name="box2"></td>
+          <td><input type="checkbox" name="box3"></td>
+        </tr>
+        <tr>
+          <td>Вигляд</td>
+          <td><input type="checkbox" name="box4"></td>
+          <td><input type="checkbox" name="box5"></td>
+          <td><input type="checkbox" name="box6"></td>
+        </tr>
+        <tr>
+          <td>Юмор</td>
+          <td><input type="checkbox" name="box7"></td>
+          <td><input type="checkbox" name="box8"></td>
+          <td><input type="checkbox" name="box9"></td>
+        </tr>
+        <tr>
+          <td>Касовий успіх</td>
+          <td><input type="checkbox" name="box10"></td>
+          <td><input type="checkbox" name="box11"></td>
+          <td><input type="checkbox" name="box12"></td>
+        </tr>
+        <tr>
+          <td>Вік</td>
+          <td><input type="checkbox" name="box13"></td>
+          <td><input type="checkbox" name="box14"></td>
+          <td><input type="checkbox" name="box15"></td>
+        </tr>
+        <tr>
+          <td>Костюм</td>
+          <td><input type="checkbox" name="box16"></td>
+          <td><input type="checkbox" name="box17"></td>
+          <td><input type="checkbox" name="box18"></td>
+        </tr>
+        <tr>
+          <td>Любовна лінія</td>
+          <td><input type="checkbox" name="box19"></td>
+          <td><input type="checkbox" name="box20"></td>
+          <td><input type="checkbox" name="box21"></td>
+        </tr>
+        <tr>
+          <td>Злодії</td>
+          <td><input type="checkbox" name="box22"></td>
+          <td><input type="checkbox" name="box23"></td>
+          <td><input type="checkbox" name="box24"></td>
+        </tr>
+        <tr>
+          <td>Екшн</td>
+          <td><input type="checkbox" name="box25"></td>
+          <td><input type="checkbox" name="box26"></td>
+          <td><input type="checkbox" name="box27"></td>
+        </tr>
+        <tr>
+          <td>Самостійність</td>
+          <td><input type="checkbox" name="box28"></td>
+          <td><input type="checkbox" name="box29"></td>
+          <td><input type="checkbox" name="box30"></td>
+        </tr>
+        <tr>
+          <td>Канонічність до коміксів</td>
+          <td><input type="checkbox" name="box31"></td>
+          <td><input type="checkbox" name="box32"></td>
+          <td><input type="checkbox" name="box33"></td>
+        </tr>
+        <tr>
+          <td>Акторська гра</td>
+          <td><input type="checkbox" name="box34"></td>
+          <td><input type="checkbox" name="box35"></td>
+          <td><input type="checkbox" name="box36"></td>
+        </tr>
+
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td>Загальний бал</td>
+          <td><input type="text" name="box37"></td>
+          <td><input type="text" name="box38"></td>
+          <td><input type="text" name="box39"></td>
+        </tr>
+      </tfoot>
     </table>
   </section>
+
   <hr>
 
   <footer id="contacts" class="contacts">
@@ -172,11 +182,27 @@
         <p>💬 <a href="https://t.me/dimalsd1" target="_blank">Telegram</a></p>
         <p>💻 <a href="https://github.com/dimajpeg" target="_blank">GitHub</a></p>
         <div>
+        </div>
       </div>
-    </div>
-    
+
   </footer>
 
+  <script>
+    function handleCheck() {
+      const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+      const counts = [0,0,0];
+      checkboxes.forEach((checkbox, index) => {
+        if (checkbox.checked) {
+          const columnIndex = index % 3;
+          counts[columnIndex]++;
+        }
+      });
+      const inputs = document.querySelectorAll('input[type="text"]');
+      inputs[0].value = counts[0];
+      inputs[1].value = counts[1];
+      inputs[2].value = counts[2];
+    }
+  </script>
 </body>
 
 </html>
